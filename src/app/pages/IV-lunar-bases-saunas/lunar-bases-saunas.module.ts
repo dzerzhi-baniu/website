@@ -1,6 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {LunarBasesSaunasPage} from './lunar-bases-saunas.page';
+import {LunarBasesSaunasRoutingModule} from "./lunar-bases-saunas-routing.module";
 
 
 @NgModule({
@@ -9,7 +10,8 @@ import {LunarBasesSaunasPage} from './lunar-bases-saunas.page';
   ],
   exports: [LunarBasesSaunasPage],
   imports: [
-    CommonModule
+    CommonModule,
+    LunarBasesSaunasRoutingModule
   ]
 })
 export class LunarBasesSaunasModule {

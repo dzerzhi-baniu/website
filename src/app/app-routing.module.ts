@@ -1,14 +1,44 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
-// TODO(DK): Implement me
 const routes: Routes = [
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
-  // { path: 'home', component: AboutComponent },
-  // { path: 'tetris', component: TetrisComponent },
-  // { path: 'nine-stars', component: NineStarsComponent },
-  // { path: 'cardmatching', component: CardmatchingComponent },
-  // { path: 'color-lines', component: ColorLinesComponent },
+  {
+    path: 'services-catalog',
+    loadChildren: () => import('./pages/I-services-catalog/services-catalog.module')
+      .then(m => m.ServicesCatalogModule)
+  },
+  {
+    path: 'barrel-saunas',
+    loadChildren: () => import('./pages/II-barrel-saunas/barrel-saunas.module')
+      .then(m => m.BarrelSaunasModule),
+  },
+  {
+    path: 'frame-type-saunas',
+    loadChildren: () => import('./pages/III-frame-type-saunas/frame-type-saunas.module')
+      .then(m => m.FrameTypeSaunasModule),
+  },
+  {
+    path: 'lunar-bases-saunas',
+    loadChildren: () => import('./pages/IV-lunar-bases-saunas/lunar-bases-saunas.module')
+      .then(m => m.LunarBasesSaunasModule),
+  },
+  {
+    path: 'baptisteries',
+    loadChildren: () => import('./pages/V-baptisteries/baptisteries-routing.module')
+      .then(m => m.BaptisteriesRoutingModule),
+  },
+  {
+    path: 'other-products',
+    loadChildren: () => import('./pages/VI-other-products/other-products.module')
+      .then(m => m.OtherProductsModule),
+  },
+  {
+    path: 'our-installations',
+    loadChildren: () => import('./pages/VII-our-installations/our-installations.module')
+      .then(m => m.OurInstallationsModule),
+  },
+  {path: '', redirectTo: 'services-catalog', pathMatch: 'full'},
+  {path: '**', redirectTo: 'services-catalog'}
 ];
 
 
@@ -16,4 +46,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

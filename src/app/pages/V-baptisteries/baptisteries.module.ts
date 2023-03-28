@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { BaptisteriesPage } from './baptisteries.page';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {BaptisteriesPage} from './baptisteries.page';
+import {BaptisteriesRoutingModule} from "./baptisteries-routing.module";
 
 
 @NgModule({
@@ -12,7 +12,9 @@ import { BaptisteriesPage } from './baptisteries.page';
     BaptisteriesPage
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    BaptisteriesRoutingModule
   ]
 })
-export class BaptisteriesModule { }
+export class BaptisteriesModule {
+}

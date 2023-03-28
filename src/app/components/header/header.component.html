@@ -1,1 +1,27 @@
-<p>header works!</p>
+<clr-header class="header header-6">
+  <div class="branding">
+    <a class="nav-link" [routerLink]="['services-catalog']">
+      <span class="title">Каталог&nbsp;Услуг</span>
+    </a>
+  </div>
+  <div class="header-nav" [clr-nav-level]="1">
+    <a [routerLink]="['barrel-saunas']" class="nav-link" [routerLinkActive]="['active']">
+      <span class="nav-text">Бани-Бочки</span>
+    </a>
+    <a [routerLink]="['frame-type-saunas']" class="nav-link" [routerLinkActive]="['active']">
+      <span class="nav-text">Бани&nbsp;каркасного&nbsp;типа</span>
+    </a>
+    <a [routerLink]="['lunar-bases-saunas']" class="nav-link" [routerLinkActive]="['active']">
+      <span class="nav-text">Бани&nbsp;Лунный&nbsp;паз</span>
+    </a>
+    <a [routerLink]="['baptisteries']" class="nav-link" [routerLinkActive]="['active']">
+      <span class="nav-text">Купальни</span>
+    </a>
+    <a [routerLink]="['other-products']" class="nav-link" [routerLinkActive]="['active']">
+      <span class="nav-text">Другие&nbsp;изделия</span>
+    </a>
+    <a [routerLink]="['our-installations']" class="nav-link" [routerLinkActive]="['active']">
+      <span class="nav-text">Наши&nbsp;монтажи</span>
+    </a>
+  </div>
+</clr-header>

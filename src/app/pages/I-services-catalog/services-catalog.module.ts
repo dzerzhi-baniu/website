@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicesCatalogPage } from './services-catalog.page';
+import {ServicesCatalogRoutingModule} from "./services-catalog-routing.module";
 
 
 
@@ -12,7 +13,8 @@ import { ServicesCatalogPage } from './services-catalog.page';
     ServicesCatalogPage
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ServicesCatalogRoutingModule
   ]
 })
 export class ServicesCatalogModule { }
