@@ -18,6 +18,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+          npm install
           npm run clean
           npm run build
           npm run process-assets
