@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: hsl(198, 100%, 15%);
+  padding: 0.5rem 1rem;
+
+}
+
+.footer .footer-item {
+  font-weight: bold;
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+
+.footer .footer-item:hover {
+  text-decoration: underline;
+}
