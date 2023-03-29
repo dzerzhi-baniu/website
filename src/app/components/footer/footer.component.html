@@ -1,4 +1,6 @@
 <div class="footer">
-  <a href="tel:+37529123412341" class="footer-item">+375(29)123412341</a>
-  <a href="mailto:dzerzhi.baniu@gmail.com" class="footer-item">dzerzhi.baniu@gmail.com</a>
+  <a *ngFor="let c of contacts.phones" href="tel:{{c.number}}" class="footer-item">
+    {{c.caption}}
+  </a>
+  <a *ngFor="let e of contacts.emails" href="mailto:{{e}}" class="footer-item">{{e}}</a>
 </div>
