@@ -1,7 +1,27 @@
+clr-header a.nav-link {
+  text-align: left;
+}
+
+/*clr-header div.branding > a {*/
+/*  color: red !important;*/
+/*  font-weight: bold;*/
+/*}*/
+
+clr-header a span.nav-text {
+  padding-left: 0;
+}
+
 clr-header div.branding a {
   color: white;
   font-weight: bold;
 }
+
 clr-header div.branding a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-text {
+    padding-left: 0 !important;
+  }
 }

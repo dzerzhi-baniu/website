@@ -2,5 +2,6 @@
   <a *ngFor="let c of contacts.phones" href="tel:{{c.number}}" class="footer-item">
     {{c.caption}}
   </a>
-  <a *ngFor="let e of contacts.emails" href="mailto:{{e}}" class="footer-item">{{e}}</a>
+  <span class="footer-item footer-address">{{contacts.address}}</span>
+<!--  <a *ngFor="let e of contacts.emails" href="mailto:{{e}}" class="footer-item">{{e}}</a>-->
 </div>

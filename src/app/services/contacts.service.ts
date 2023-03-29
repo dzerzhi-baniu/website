@@ -11,6 +11,7 @@ interface IPhone {
 export class ContactsService {
   public phones: IPhone[] = [ {caption: '+375(25)7122237', number: '+375257122237'}]
   public emails = ['dzerzhi.baniu@gmail.com']
+  public address = "Дзержинский район, деревня Бокиново."
 
   constructor() {
   }

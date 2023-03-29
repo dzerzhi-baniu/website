@@ -1,9 +1,12 @@
 .footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   background-color: hsl(198, 100%, 15%);
   padding: 0.5rem 1rem;
+}
 
+.footer .footer-address {
+  font-weight: normal;
 }
 
 .footer .footer-item {
@@ -11,8 +14,9 @@
   color: white;
   margin-left: 1rem;
   text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-
 
 .footer .footer-item:hover {
   text-decoration: underline;
