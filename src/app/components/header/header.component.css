@@ -1,0 +1,7 @@
+clr-header div.branding a {
+  color: white;
+  font-weight: bold;
+}
+clr-header div.branding a:hover {
+  text-decoration: underline;
+}
