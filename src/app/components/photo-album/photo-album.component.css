@@ -1,0 +1,11 @@
+div.photo-album {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.photo-album img.content-image {
+  width: 80%;
+  max-width: 500px;
+  margin: 1rem auto;
+}

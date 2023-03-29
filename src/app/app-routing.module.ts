@@ -23,9 +23,9 @@ const routes: Routes = [
       .then(m => m.LunarBasesSaunasModule),
   },
   {
-    path: 'baptisteries',
-    loadChildren: () => import('./pages/V-baptisteries/baptisteries-routing.module')
-      .then(m => m.BaptisteriesRoutingModule),
+    path: 'fonts',
+    loadChildren: () => import('./pages/V-fonts/fonts.module')
+      .then(m => m.FontsModule),
   },
   {
     path: 'other-products',
