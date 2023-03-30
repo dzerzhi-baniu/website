@@ -1,0 +1,3 @@
+- move image lists from components to auto-generated json files (`npm create data`);
+- enhance photo-album component to use owl-carousel with lazy loading image support;
+- 
