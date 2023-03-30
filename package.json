@@ -15,6 +15,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",
+    "@angular/cdk": "^15.2.5",
     "@angular/common": "^15.2.0",
     "@angular/compiler": "^15.2.0",
     "@angular/core": "^15.2.0",
@@ -25,6 +26,7 @@
     "@cds/core": "^6.3.2",
     "@clr/angular": "^15.1.0",
     "@clr/ui": "^15.1.0",
+    "ng-gallery": "^8.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

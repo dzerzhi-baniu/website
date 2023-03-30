@@ -3,9 +3,11 @@ import {CommonModule} from '@angular/common';
 import {HeaderComponent} from "./header/header.component";
 import {ClarityModule} from "@clr/angular";
 import {RouterModule} from "@angular/router";
-import { FooterComponent } from './footer/footer.component';
-import { PhotoAlbumComponent } from './photo-album/photo-album.component';
+import {FooterComponent} from './footer/footer.component';
+import {PhotoAlbumComponent} from './photo-album/photo-album.component';
 import {ContactsService} from "../services/contacts.service";
+import {CarouselComponent} from './carousel/carousel.component';
+import {GalleryModule} from "ng-gallery";
 
 
 @NgModule({
@@ -13,6 +15,7 @@ import {ContactsService} from "../services/contacts.service";
     HeaderComponent,
     FooterComponent,
     PhotoAlbumComponent,
+    CarouselComponent,
   ],
   exports: [
     HeaderComponent,
@@ -22,7 +25,8 @@ import {ContactsService} from "../services/contacts.service";
   imports: [
     CommonModule,
     RouterModule,
-    ClarityModule
+    ClarityModule,
+    GalleryModule
   ],
   providers: [
     ContactsService
