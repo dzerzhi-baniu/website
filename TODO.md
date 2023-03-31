@@ -1,3 +1,3 @@
-- move image lists from components to auto-generated json files (`npm create data`);
+- Move image lists of image file names from ImageProviderService to auto-generated json files. Files these jsons should be created via  `npm run create-data` command which should precede `npm run build`;
 - Implement loading indicator
 - 
