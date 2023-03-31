@@ -1,64 +1,12 @@
 import {Component} from '@angular/core';
+import {ImageContainer} from "../../common/image-container";
+import {ImgCategory} from "../../services/image-provider/image-provider.constants";
 
 @Component({
   selector: 'app-lunar-bases-saunas',
   templateUrl: './lunar-bases-saunas.page.html',
   styleUrls: ['./lunar-bases-saunas.page.css']
 })
-export class LunarBasesSaunasPage {
-  images = [
-    "1000000685.jpg",
-    "1000000687.jpg",
-    "1000000688.jpg",
-    "1000000751.jpg",
-    "1000000753.jpg",
-    "1000000757.jpg",
-    "1000000759.jpg",
-    "1000000768.jpg",
-    "1000000910.jpg",
-    "1000000913.jpg",
-    "231.jpg",
-    "617.jpg",
-    "618.jpg",
-    "IMG-0253a4e3f8ffe70ccb0a91a9cd262efd-V.jpg",
-    "IMG-17c6a0e1b9f10c363d0ebd5a3ab9b5ae-V.jpg",
-    "IMG-1904863433ca5d2814db6ba3315f0f5d-V.jpg",
-    "IMG_20230219_104739.jpg",
-    "IMG_20230219_104745.jpg",
-    "IMG_20230219_104749.jpg",
-    "IMG-2249e00f2cf0ebf043b590528368ee8f-V.jpg",
-    "IMG-29296d5350fad9d194a8843a318b1ab5-V.jpg",
-    "IMG-2b4a2b518d62a9b30c41dae2aaf82ec0-V.jpg",
-    "IMG-2d1fa55afeceb74d567f2a549d321873-V.jpg",
-    "IMG-2e72d461ab06eb75cf8b6e779b8e24e3-V.jpg",
-    "IMG-2f25d3ff0c50ab691d3213ca8abbfc19-V.jpg",
-    "IMG-3098f2350beb241b21deaa7750957cdc-V.jpg",
-    "IMG-3142193df78f6c57a7efbfe86c16bf80-V.jpg",
-    "IMG-3252d2883b3f166b4f678609aa9fbec0-V.jpg",
-    "IMG-42ed5d5d6c13ed56897f66bc8c7288a0-V.jpg",
-    "IMG-4b13cf59bd69b066f121e7b770e3a7e3-V.jpg",
-    "IMG-4f483b386c7d30ee8a5fdcc5d0f2d380-V.jpg",
-    "IMG-5030a758007a13701ff69b5c8df2332b-V.jpg",
-    "IMG-66b3aa8fc6a8a3828096cf8bf260eeff-V.jpg",
-    "IMG-66cce9c151de66d0f0e5536d6262893d-V.jpg",
-    "IMG-6ee22a35c6184b005909f97787a5def9-V.jpg",
-    "IMG-71b8348b26c8288130781ca4decf49a2-V.jpg",
-    "IMG-722db06b417a37599cdbffaaea347c5d-V.jpg",
-    "IMG-769e2fdb88cd891cfe32a081defabcdb-V.jpg",
-    "IMG-7a28796d51257a2ddd752634f9679166-V.jpg",
-    "IMG-8543d5cf2e040b41e589f07bedef6beb-V.jpg",
-    "IMG-96e09f00251fb58c8bfe16b1fe33672f-V.jpg",
-    "IMG-9ae7794875daad8d27cb523067a9b0f7-V.jpg",
-    "IMG-a7d8cab17d3d52f217f0ad36fecb0f12-V.jpg",
-    "IMG-a919a7afd69df17ea49c39d5c8ff10fa-V.jpg",
-    "IMG-b330821b0edb4abd9abd36737040e629-V.jpg",
-    "IMG-bb45f0028be04b3cec7909ea277cccf7-V.jpg",
-    "IMG-c3f059f583ace4cc76791517fed62239-V.jpg",
-    "IMG-c9a882fe0e8d297caa43ab1b488f2917-V.jpg",
-    "IMG-ca02c36755b73004cfe89cf5e6fffa13-V.jpg",
-    "IMG-e14f82ebacf0be3b0bfa5de50266644f-V.jpg",
-    "IMG-f0dcc7b596b9bc79443005e3af101ae3-V.jpg",
-    "IMG-fa6133a58f34958c01135cb2b406cb35-V.jpg",
-    "IMG-fdccc9531ad9fb6a16a4b6ff2bde67b9-V.jpg",
-  ].map(img => `assets/images/IV-lunar-bases-saunas/${img}`)
+export class LunarBasesSaunasPage extends ImageContainer {
+  public readonly imgCategory = ImgCategory.LUNAR_BASES_SAUNAS;
 }
