@@ -1,7 +1,9 @@
 <div class="footer">
-  <a *ngFor="let c of contacts.phones" href="tel:{{c.number}}" class="footer-item">
+  <a *ngFor="let c of contacts.phones" href="tel:{{c.number}}" class="footer-item phone-item">
     {{c.caption}}
   </a>
-  <span class="footer-item footer-address">{{contacts.address}}</span>
-<!--  <a *ngFor="let e of contacts.emails" href="mailto:{{e}}" class="footer-item">{{e}}</a>-->
+  <span class="footer-item footer-address">
+    <a [href]="contacts.address.url" target="_blank" class="footer-item">{{contacts.address.address}}</a>
+  </span>
+  <!--  <a *ngFor="let e of contacts.emails" href="mailto:{{e}}" class="footer-item">{{e}}</a>-->
 </div>
