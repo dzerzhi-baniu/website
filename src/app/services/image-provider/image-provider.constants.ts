@@ -1,4 +1,5 @@
 export const enum ImgCategory {
+  BARREL_SAUNAS = 'II-barrel-saunas',
   FRAME_TYPE_SAUNAS = 'III-frame-type-saunas',
   LUNAR_BASES_SAUNAS = 'IV-lunar-bases-saunas',
   FONTS = 'V-fonts',

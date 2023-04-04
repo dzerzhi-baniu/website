@@ -17,11 +17,11 @@ const routes: Routes = [
     loadChildren: () => import('./pages/III-frame-type-saunas/frame-type-saunas.module')
       .then(m => m.FrameTypeSaunasModule),
   },
-  {
-    path: 'lunar-bases-saunas',
-    loadChildren: () => import('./pages/IV-lunar-bases-saunas/lunar-bases-saunas.module')
-      .then(m => m.LunarBasesSaunasModule),
-  },
+  // {
+  //   path: 'lunar-bases-saunas',
+  //   loadChildren: () => import('./pages/IV-lunar-bases-saunas/lunar-bases-saunas.module')
+  //     .then(m => m.LunarBasesSaunasModule),
+  // },
   {
     path: 'fonts',
     loadChildren: () => import('./pages/V-fonts/fonts.module')

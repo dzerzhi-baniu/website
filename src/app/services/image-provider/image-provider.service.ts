@@ -38,7 +38,7 @@ export class ImageProviderService {
       "IMG-cb4dff5fd05cd2564a0f77d6c410b8d8-V.jpg",
       "IMG-ddec1a70f41563ae348e3bce40abd440-V.jpg",
     ],
-    [ImgCategory.LUNAR_BASES_SAUNAS]: [
+    [ImgCategory.BARREL_SAUNAS]: [
       "1000000685.jpg",
       "1000000687.jpg",
       "1000000688.jpg",
@@ -93,6 +93,7 @@ export class ImageProviderService {
       "IMG-fa6133a58f34958c01135cb2b406cb35-V.jpg",
       "IMG-fdccc9531ad9fb6a16a4b6ff2bde67b9-V.jpg",
     ],
+    [ImgCategory.LUNAR_BASES_SAUNAS]: [],
     [ImgCategory.FONTS]: [
       "IMG-04f836255e5df098fd11aa71b6facae8-V.jpg",
       "IMG-0cbf88fb3490647b5a55ce013ad40b60-V.jpg",
