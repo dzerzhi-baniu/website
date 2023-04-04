@@ -1,3 +1,5 @@
+import * as imagesJson from '../../../assets/generated/images.json'
+
 export const enum ImgCategory {
   BARREL_SAUNAS = 'II-barrel-saunas',
   FRAME_TYPE_SAUNAS = 'III-frame-type-saunas',
@@ -12,3 +14,6 @@ export const enum ImgSize {
   SMALL
 }
 
+export type ImageLibrary = Record<ImgCategory, string[]>
+
+export const imageLib = imagesJson as unknown as ImageLibrary;
